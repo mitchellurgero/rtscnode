@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="RoundTable Secure Chat">
+    <meta name="author" content="Mitchell Urgero <info@urgero.org>">
+    <title>RTSC | Secure, Signed, Messaging</title>
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./dist/css/hero.css" rel="stylesheet">
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/openpgp.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">RTSC 2.0</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#how">How This Works</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Submit Bug / Question</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Jumbotron Header -->
+            <header class="jumbotron hero-spacer">
+                <h1>Welcome to RTSC 2.0!</h1>
+                <p>Be a part of the first ever public implimentation of RoundTable Secure Chat. Private Chat Groups that run off the idea of voting, encryption and security. OpenPGP, SSL, and signed messages delivered to everyone in the group leaves for a very secure chatting session.</p>
+                <p><a class="btn btn-primary btn-large" href="#" onClick="startModal()"> Start a Chat!</a></p>
+            </header>
+
+            <hr>
+
+            <!-- Title -->
+            <a id="features"></a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Features</h3>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Page Features -->
+            <div class="row text-center">
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/800x500" alt="">
+                        <div class="caption">
+                            <h3>Secure</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/800x500" alt="">
+                        <div class="caption">
+                            <h3>Simple</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/800x500" alt="">
+                        <div class="caption">
+                            <h3>Fast</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/800x500" alt="">
+                        <div class="caption">
+                            <h3>Reliable</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.row -->
+            <br>
+            <a id="how"></a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>How This Works</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p>RTSC is built around the idea of "Round Tables" (Hence the name!). This means that everyone comes together and can vote on different things and talk about them as well.</p>
+                <p>This means that everyone can vote on who can join, who is kicked from the room, etc.</p>
+                <p>RTSC also uses OpenPGP Javascript libraries to encrypt all chat communications. However - voting is NOT encrypted this way because no PGP private keys are sent to the server. Voting is however sent over encrypted SSL tunnles to ensure the highest available safety for you is ensured.</p>
+
+              </div>
+            </div>
+              <br>
+            <a id="about"></a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>About Us</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p>We are a group of individuals that have a need or want for secure, safe, and free messaging. This messaging is all done via a web browser.</p>
+
+              </div>
+            </div>
+            <br>
+            <a id="contact"></a>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>Contact Us or Submit a bug report</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p>Some information here.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="modal fade" id="chatModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Start a Chat!</h4>
+                    </div>
+                    <div class="modal-body" id="chatModalBody">
+                      <p>Please fill out the following form to continue to chat:</p>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <b>Your Name:</b>
+                        </div>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control" id="username" placeholder="John Smith" />
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <b>Your email:</b>
+                        </div>
+                        <div class="col-md-9">
+                          <input type="text" class="form-control" id="email" placeholder="username@example.com" />
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <b>Private Key(SAVE THIS SOMEWHERE!):</b>
+                        </div>
+                        <div class="col-md-9">
+                          <textarea class="form-control" id="privatekey"></textarea>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <b>Public Key(SAVE THIS SOMEWHERE!):</b>
+                        </div>
+                        <div class="col-md-9">
+                          <textarea class="form-control" id="publickey"></textarea>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <p><b>Private Key Passphrase(KEEP IT SAFE):</b></p>
+                        </div>
+                        <div class="col-md-9">
+                          <input type="text" id="keypass" class="form-control">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <p>By clicking on 'Start Chat!' you are agreeing to our <a href="#">Terms Of Services.</a></p>
+                        </div>
+                        <div class="col-md-9">
+                          <button id="genk" class="btn btn-warning" onclick="genKeys()">Generate PGP Keys</button>&nbsp;&nbsp;
+                          <a href="#" onclick="saveKey()">Save Key Pair</a>&nbsp;&nbsp;
+
+                          <button id="startc" class="btn btn-success pull-right" onclick="startChat()" disabled>Start Chat!</button>&nbsp;&nbsp;
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" onClick="stopModal()">Close Chat</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; rtsc.io 2017</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- /.container -->
+
+  </body>
+</html>

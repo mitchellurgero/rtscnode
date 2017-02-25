@@ -1,0 +1,26 @@
+{
+  "name": "rtsc",
+  "version": "1.0.0",
+  "description": "RoundTable Secure Chat reimplimentation in NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitchellurgero/rtscnode.git"
+  },
+  "author": "Mitchell Urgero <info@urgero.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitchellurgero/rtscnode/issues"
+  },
+  "homepage": "https://github.com/mitchellurgero/rtscnode#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "fs-sync": "^1.0.3",
+    "jquery": "^3.1.1",
+    "openpgp": "^2.3.7"
+  }
+}
